@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# 工具自身的临时目录（铁律：临时文件只准放 .build-tmp）
+.build-tmp/
+
+# 其它
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db

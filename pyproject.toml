@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blamewhen"
+version = "0.1.0"
+description = "npm dependency timeline attribution: who introduced a vulnerable dependency version, and in which commit"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "ox-alpha" }]
+keywords = ["npm", "security", "dependency", "lockfile", "git", "attribution"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+
+[project.scripts]
+blamewhen = "blamewhen.cli:main"
+
+[tool.setuptools]
+packages = ["blamewhen"]

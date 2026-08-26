@@ -100,3 +100,26 @@ CI（`.github/workflows/ci.yml`）：ubuntu + windows × Python 3.10 / 3.12。
 ## License
 
 MIT © 2025 ox-alpha（见 [LICENSE](LICENSE)）。
+
+## Quickstart
+
+1. `git clone https://github.com/qianbrady/blamewhen`
+2. `pip install -e .`
+3. Run `python -m blamewhen --help` - full usage on screen
+
+## Usage
+
+```text
+$ python -m blamewhen --help
+usage: blamewhen [-h] [--version] 命令 ...
+npm 依赖漏洞时间轴归因：给定依赖包名，回答“是谁、哪次提交把它引进来的”。
+positional arguments:
+  命令
+    timeline  输出某包版本变化时间轴
+    when      定位某版本首次出现的提交
+    diff      比较两个版本切换的间隔与跳过版本
+```
+
+## Contributing
+
+Issues and PRs welcome - run `pytest` locally before submitting.

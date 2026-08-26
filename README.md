@@ -1,5 +1,6 @@
 # blamewhen
 
+[![CI](https://github.com/qianbrady/blamewhen/actions/workflows/ci.yml/badge.svg)](https://github.com/qianbrady/blamewhen/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 > **Dependency timeline attribution for npm lockfiles** — answer *who introduced a vulnerable dependency version, and in which commit*, by replaying the history of `package-lock.json` in your git repo.
 
 `blamewhen` 是一个纯标准库（Python ≥ 3.10）的 CLI 工具：给定一个 npm 依赖包名，它沿 git 历史逐提交解析 `package-lock.json`（兼容 npm **v1 / v2 / v3** 三种格式），回答「是谁、哪次提交把它引进来的」，并给出该包的完整版本变化时间轴。
